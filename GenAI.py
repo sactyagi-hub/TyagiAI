@@ -9,7 +9,7 @@ st.markdown("""
             unsafe_allow_html=True,
             )
 #robo = genai.Client(api_key="MY_API")
-robo= genai.Client(api_key=st.secrets["MY_API"]
+robo= genai.Client(api_key=st.secrets["MY_API"])
 myChat=robo.chats.create(model="gemini-3.1-flash-lite")
 response_placeholder = st.empty()
 question = st.text_input("", placeholder= "Question : ")
