@@ -1,6 +1,7 @@
 import datetime
 import streamlit as st
 from google import genai
+from google.genai import types
 st.markdown("""
             <h1 style = 'text-align: center;'> Tyagi ji ka AI Assistant </h1>
             <p style ='text-align: center; font-size:18px;'
@@ -9,7 +10,7 @@ st.markdown("""
             """,
             unsafe_allow_html=True,
             )
-#st.date=today
+today = datetime.date.today().strftime("%B %d, %Y")
 #robo = genai.Client(api_key="MY_API")
 robo= genai.Client(api_key=st.secrets["MY_API"])
 myChat=robo.chats.create(model="gemini-3.1-flash-lite")
