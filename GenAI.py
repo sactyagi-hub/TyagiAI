@@ -1,3 +1,4 @@
+import datetime
 import streamlit as st
 from google import genai
 st.markdown("""
@@ -8,6 +9,9 @@ st.markdown("""
             """,
             unsafe_allow_html=True,
             )
+today = datetime.date.today()
+# Set it as the default value
+chosen_date = st.date_input("Choose a date", value=today)
 #robo = genai.Client(api_key="MY_API")
 robo= genai.Client(api_key=st.secrets["MY_API"])
 myChat=robo.chats.create(model="gemini-3.1-flash-lite")
