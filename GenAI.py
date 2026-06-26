@@ -11,7 +11,8 @@ st.markdown("""
             )
 today = datetime.date.today()
 # Set it as the default value
-chosen_date = st.date_input("Choose a date", value=today)
+#chosen_date = st.date_input("Choose a date", value=today)
+st.date=today
 #robo = genai.Client(api_key="MY_API")
 robo= genai.Client(api_key=st.secrets["MY_API"])
 myChat=robo.chats.create(model="gemini-3.1-flash-lite")
