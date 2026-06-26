@@ -3,7 +3,7 @@ import streamlit as st
 from google import genai
 st.markdown("""
             <h1 style = 'text-align: center;'> Tyagi ji ka AI Assistant </h1>
-            <p style ='text-align: center; font-size:18px;'?
+            <p style ='text-align: center; font-size:18px;'
             Ask any Python Question.
             </p>
             """,
