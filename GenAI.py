@@ -15,7 +15,7 @@ today = datetime.date.today().strftime("%B %d, %Y")
 robo= genai.Client(api_key=st.secrets["MY_API"])
 #myChat=robo.chats.create(model="gemini-3.1-flash-lite")
 myChat = robo.chats.create(
-    model="gemini-2.5-flash", # Note: gemini-2.5-flash is the standard recommended model
+    model="gemini-3.1-flash-lite", # Note: gemini-2.5-flash is the standard recommended model
     config=types.GenerateContentConfig(
         system_instruction=f"You are Tyagi ji ka AI Assistant. Today's real-world date is {today}. Always use this date as your anchor for current events or relative time questions."
     )
