@@ -33,7 +33,7 @@ col1, col2, col3 = st.columns([4,1,4])
 with col2:
     send = st.button("Send")
 
-if send and question:
+if send and question.strip():
     # 2. Call send_message using the chat attached to the persistent client
     response = st.session_state.myChat.send_message(question)
     response_placeholder.write(response.text)
