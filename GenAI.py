@@ -4,7 +4,7 @@ from google import genai
 from google.genai import types
 
 st.markdown("""
-            <h1 style = 'text-align: center;'> Tyagi ji ka AI Assistant </h1>
+            <h1 style = 'text-align: center;'> Tyagi ji ka AI Naukar </h1>
             <p style ='text-align: center; font-size:18px;'>
             Ask any Question.
             </p>
