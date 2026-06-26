@@ -20,7 +20,7 @@ if "myChat" not in st.session_state:
     today = datetime.date.today().strftime("%B %d, %Y")
     # Use the session_state client to build the chat
     st.session_state.myChat = st.session_state.robo.chats.create(
-        model="gemini-2.5-flash", 
+        model="gemini-3.1-flash-lite", 
         config=types.GenerateContentConfig(
             system_instruction=f"You are Tyagi ji ka AI Assistant. Today's real-world date is {today}. Always use this date as your anchor for current events or relative time questions."
         )
